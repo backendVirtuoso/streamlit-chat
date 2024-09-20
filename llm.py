@@ -11,7 +11,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from config import answer_examples
 
 store = {}
-
+ 
 def get_session_history(session_id: str) -> BaseChatMessageHistory:
     if session_id not in store:
         store[session_id] = ChatMessageHistory()
